@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Minhas habilidades</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para os ícones do Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        :root {
+            --main-color: #2C3E50; /* Azul escuro quase preto */
+            --text-color: #34495E; /* Cinza-azulado */
+            --bg-color-01: #ECF0F1; /* Cinza claro */
+            --bg-color-02: #F7F9F9; /* Branco suave */
+            --bg-color-00: #FFFFFF; /* Branco puro */
+            --border-color: #2C3E50; /* Azul escuro */
+            --bar-color: #34495E; /* Cinza-azulado para as barras de fundo */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background-color: var(--bg-color-01);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 7rem 4rem 3rem;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid var(--main-color);
+            padding-bottom: 1rem;
+        }
+
+        p {
+            margin-top: 1.8rem;
+            text-align: justify;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .scroll-section {
+            position: relative;
+            margin-top: 4rem;
+        }
+
+        .scroll-section::before, .scroll-section::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 20px;
+            background-color: var(--bar-color);
+            z-index: 1;
+        }
+
+        .scroll-section::before {
+            top: 0;
+        }
+
+        .scroll-section::after {
+            bottom: 0;
+        }
+
+        .scroll-container {
+            position: relative;
+            width: 100vw;
+            overflow: hidden;
+            padding: 25px 0;
+        }
+
+        .scroll-content {
+            display: flex;
+            width: calc(200%);
+            animation: scroll 15s linear infinite;
+        }
+
+        .scroll-content img {
+            flex: 0 0 auto;
+            width: 160px;
+            height: auto;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .scroll-container.reverse .scroll-content {
+            animation-direction: reverse;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1.5rem;
+            background-color: var(--bg-color-01);
+            border-top: 3px solid var(--main-color);
+        }
+
+        .social-media {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 30px;
+        }
+
+        .social-media a {
+            font-size: 1.8rem;
+            color: var(--main-color);
+        }
+
+        .social-media a:hover {
+            color: var(--text-color);
+        }
+
+        footer p {
+            margin-top: 1rem;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Python - Minhas habilidades</h1>
+    </header>
+    <section>
+        <h2>Bibliotecas Python para Análise de Dados</h2>
+        <p><strong>Numpy:</strong> É uma biblioteca poderosa para cálculo numérico e manipulação de arrays multidimensionais, permitindo realizar operações matemáticas eficientes.</p>
+        <p><strong>Pandas:</strong> Facilita o trabalho com estruturas de dados, como DataFrames, ideal para manipulação de dados tabulares e séries temporais.</p>
+        <p><strong>Matplotlib:</strong> Uma biblioteca de visualização que permite criar gráficos estáticos, animados e interativos em Python.</p>
+        <p><strong>Seaborn:</strong> Construída sobre o Matplotlib, oferece uma interface mais simples para criar gráficos estatísticos informativos e atrativos.</p>
+        <p><strong>Scipy:</strong> Voltada para cálculos científicos e estatísticos, incluindo previsões, como valores futuros de imóveis com base em dados históricos.</p>
+
+        <div class="scroll-section">
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <img src="css/img/numpy.png" alt="Numpy">
+                    <img src="css/img/pandas.png" alt="Pandas">
+                    <img src="css/img/matplotlib2.png" alt="Matplotlib">
+                    <img src="css/img/seaborn.png" alt="Seaborn">
+                    <img src="css/img/scipy.png" alt="Scipy">
+                    <img src="css/img/numpy.png" alt="Numpy">
+                    <img src="css/img/pandas.png" alt="Pandas">
+                    <img src="css/img/matplotlib2.png" alt="Matplotlib">
+                    <img src="css/img/seaborn.png" alt="Seaborn">
+                    <img src="css/img/scipy.png" alt="Scipy">
+                </div>
+            </div>
+
+            <div class="scroll-container reverse">
+                <div class="scroll-content">
+                    <img src="css/img/numpy.png" alt="Numpy">
+                    <img src="css/img/pandas.png" alt="Pandas">
+                    <img src="css/img/matplotlib2.png" alt="Matplotlib">
+                    <img src="css/img/seaborn.png" alt="Seaborn">
+                    <img src="css/img/scipy.png" alt="Scipy">
+                    <img src="css/img/numpy.png" alt="Numpy">
+                    <img src="css/img/pandas.png" alt="Pandas">
+                    <img src="css/img/matplotlib2.png" alt="Matplotlib">
+                    <img src="css/img/seaborn.png" alt="Seaborn">
+                    <img src="css/img/scipy.png" alt="Scipy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/welbiazi/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5575981828601"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.instagram.com/universe.datanalysis/"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p>&copy; 2024  Python - Minhas habilidades</p>
+    </footer>
+</body>
+</html>

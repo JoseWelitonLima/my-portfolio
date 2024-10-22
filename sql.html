@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL - Minhas habilidades</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para os ícones do Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        :root {
+            --main-color: #2C3E50; /* Azul escuro quase preto */
+            --text-color: #34495E; /* Cinza-azulado */
+            --bg-color-01: #ECF0F1; /* Cinza claro */
+            --bg-color-02: #F7F9F9; /* Branco suave */
+            --bg-color-00: #FFFFFF; /* Branco puro */
+
+            /* Cores extras */
+            --color-01: #2C3E50; /* Azul escuro */
+            --color-02: #34495E; /* Cinza-azulado */
+            --color-03: #BDC3C7; /* Cinza intermediário */
+            --color-04: #ECF0F1; /* Cinza claro */
+            --color-05: #F7F9F9; /* Branco suave */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+        }
+
+        html {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            padding: 1.1rem;
+            background-color: var(--bg-color-01);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        h1 {
+            font-size: 2.7rem;
+            color: var(--text-color);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 6rem 6rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            border-bottom: 3px solid var(--main-color); /* Mantendo a borda */
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-top: 1.2rem;
+            text-align: justify;
+            color: var(--text-color);
+        }
+
+        pre {
+            background-color: var(--bg-color-02);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            color: var(--main-color);
+        }
+
+        .IMG {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .IMG img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid var(--main-color); /* Borda */
+            border-radius: 0.5rem;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.2rem;
+            background-color: var(--bg-color-01);
+            border-top: 3px solid var(--main-color); /* Borda */
+        }
+
+        .social-media {
+            margin-top: 1rem;
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-media a {
+            font-size: 1.5rem;
+            color: var(--main-color);
+        }
+
+        .social-media a:hover {
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SQL - Minhas habilidades</h1>
+    </header>
+    <section>
+        <h2>Consultas e Análise de Dados</h2>
+        <p>Sintaxe para consultar a quantidade de clientes por estado e por fonte de tráfego em uma tabela de veículos de comunicação.</p>
+        <!-- Exemplo de código SQL -->
+        <pre>
+            select 
+            STATE,
+            SOURCE,
+            count(*) as Qnt 
+            from PEOPLE
+            where id <= 100
+            group by STATE, SOURCE
+            order by STATE, SOURCE
+        </pre>
+        <p>Database:</p>
+        <div class="IMG SQL">
+            <img src="css/img/img-SQL CODE.png" alt="IMG - SQL CODE"> <!-- imagem SQL 1 -->
+        </div>
+        
+        <p>O retorno esperado:</p>
+        <div class="IMG SQL RETURN">
+            <img src="css/img/img - SQL RETURN.png" alt="IMG SQL RETURN"> <!-- imagem SQL 2 -->
+        </div>
+
+        <p>Gráfico interativo no database:</p>
+        <div class="IMG SQL RETURN">
+            <img src="css/img/img- SQL RETURN 2.png" alt="IMG SQL RETURN"> <!-- imagem SQL 2 -->
+        </div>
+    </section>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/welbiazi/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/"><i class='bx bxl-github'></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5575981828601"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.instagram.com/universe.datanalysis/"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p>&copy; 2024 SQL - Minhas habilidades</p>
+    </footer>
+</body>
+</html>

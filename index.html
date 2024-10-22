@@ -1,0 +1,206 @@
+
+ <!-- /CODIGO HTML -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio Analista de Dados</title>
+     <link rel="shortcut icon" href="#" type="image/x-icon">
+     <!-- Box icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/style.css">
+ </head>
+ 
+ <body>
+     <header>
+         <a href="#" class="logo">Portifólio</a>
+ 
+         <div class="nav">
+             <a href="#home">Home</a>
+             <a href="#services">Serviços</a>
+             <a href="#portfolio">Portfólio</a>
+             <a href="#contact">Contato</a>
+             <a href="#about">Sobre</a> <!-- Corrigido o link -->
+         </div>
+ 
+         <div class="nav-responsive"> <!--Navbar responsiva -->
+             <a href="#home">Home</a>
+             <a href="#services">Serviços</a>
+             <a href="#portfolio">Portfólio</a>
+             <a href="#contact">Contato</a>
+             <a href="#about">Sobre</a> <!-- Corrigido o link -->
+         </div>
+ 
+         <div class="menu-hamburguer">
+             <div class="bar1"></div>
+             <div class="bar2"></div>
+             <div class="bar3"></div>
+         </div>
+     </header>
+ 
+     <!-- Home Section -->
+     <section class="home" id="home">
+         <div class="home-content">
+             <h3>Olá, eu sou</h3>
+             <h1>Wellington Biazi</h1>
+             <h3>Data Analysis <span>SQL</span> and <span>Python</span></h3>
+ 
+             <p>
+                Profissional dedicado à análise de dados, com experiência no uso de SQL para manipulação e extração de dados, Python para análise estatística e automação de processos, e Power BI para criação de dashboards interativos e visualizações de dados.
+             </p>
+ 
+             <div class="social-media">
+                 <a href="https://www.linkedin.com/in/welbiazi/"><i class='bx bxl-linkedin'></i></a>
+                 <a href="https://github.com/JoseWelitonLima"><i class='bx bxl-github'></i></a>
+                 <a href="https://api.whatsapp.com/send?phone=5575981828601"><i class='bx bxl-whatsapp'></i></a>
+                 <a href="https://www.instagram.com/universe.datanalysis/"><i class='bx bxl-instagram'></i></a>
+             </div>
+         </div>
+         <div>
+             <a href="docs/Curriculo.pdf" class="btn">Download CV</a>
+         </div>
+ 
+     </section>
+     <!-- /Home Section -->
+ 
+     <!-- Service Section -->
+     <section class="services" id="services">
+         <h2>Minhas <span>habilidades</span></h2>
+ 
+         <div class="services-container">
+             <div class="services-box">
+                 <i class='bx bx-data'></i>
+                 <h3>SQL</h3>
+                 
+                 <p>
+                Structured Query Language - Utilizo SQL para consultar, inserir, atualizar e excluir dados de forma eficiente, permitindo uma análise aprofundada e a extração de informações valiosas. Sou capaz de escrever consultas complexas que envolvem junções, subconsultas e agregações, o que me ajuda a transformar dados brutos em insights práticos. Além disso, estou sempre buscando aprimorar minhas habilidades em SQL para otimizar consultas e garantir a integridade dos dados em diferentes projetos.                  
+                </p>
+                 <a href="sql.html" class="btn">Leia Mais</a>
+             </div>
+ 
+             <div class="services-box">
+                 <i class='bx bx-bar-chart-square'></i>
+                 <h3>Power BI</h3>
+                 
+                 <p>
+                    Utilizo ferramentas de BI para criar dashboards interativos e relatórios, permitindo que as empresas visualizem seu desempenho de forma clara e objetiva. Compreendo a importância de dados de qualidade e análise preditiva para impulsionar a eficiência operacional e a estratégia de negócios. Estou sempre em busca de aprimorar minhas habilidades nessa área, a fim de contribuir para decisões mais informadas e estratégicas.
+                 </p>
+                 <a href="powerbi.html" class="btn">Leia Mais</a>
+             </div>
+ 
+             <div class="services-box">
+                 <i class='bx bxl-python'></i>
+                 <h3>Python</h3>
+                 
+                 <p>
+                    Possuo experiência em Python, uma linguagem versátil e poderosa que utilizo para diversas aplicações, incluindo análise de dados e automação de processos. Com um forte entendimento das bibliotecas populares, como Pandas, NumPy e Matplotlib, sou capaz de manipular grandes conjuntos de dados, realizar análises estatísticas e visualizar informações de maneira eficaz. Minha habilidade em Python me permite desenvolver scripts e soluções personalizadas para atender às necessidades específicas de projetos, otimizando fluxos de trabalho e melhorando a eficiência geral.
+                 </p>
+                 <a href="python.html" class="btn">Leia Mais</a>
+             </div>
+         </div>
+     </section>
+     <!-- /Service Section -->
+ 
+    <!-- /Portfolio Section -->
+<section class="portfolio" id="portfolio">
+    <h2>Últimos <span>Projetos</span></h2>
+
+    <div class="portfolio-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+        <div class="portfolio-box">
+            <img src="css/img/img insigths.jpg" alt="Portfolio 1">
+            <div class="portfolio-layer">
+                <h4>SQL</h4>
+                <p>Análise de dados, consultas complexas, manipulação de dados, otimização de banco de dados, modelagem de dados, integração de dados, criação de relatórios, conhecimento em joins, subconsultas e funções agregadas.</p>
+                <a href="#" onclick="showAlert()"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="css/img/img dashboard.jpg" alt="Portfolio 2">
+            <div class="portfolio-layer">
+                <h4>SQL</h4>
+                <p>Análise de dados, consultas complexas, manipulação de dados, otimização de banco de dados, modelagem de dados, integração de dados, criação de relatórios, conhecimento em joins, subconsultas e funções agregadas.</p>
+                <a href="#" onclick="showAlert()"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="css/img/img dax.jpg" alt="Portfolio 3">
+            <div class="portfolio-layer">
+                <h4>Business Intelligence (BI)</h4>
+                <p>Análise de dados, visualização de dados, ferramentas de BI, dashboards interativos, relatórios analíticos, tomada de decisão baseada em dados, integração de fontes de dados, métricas de desempenho, otimização de processos, insights acionáveis.</p>
+                <a href="#" onclick="showAlert()"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="css/img/img html.jpg" alt="Portfolio 4">
+            <div class="portfolio-layer">
+                <h4>Python</h4>
+                <p>Programação orientada a objetos, análise de dados, bibliotecas como Pandas e NumPy, visualização de dados com Matplotlib e Seaborn, automação de tarefas, manipulação de arquivos, desenvolvimento de scripts, integração com APIs, aprendizado de máquina, projetos de ciência de dados.</p>
+                <a href="#" onclick="showAlert()"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Portfolio Section -->
+
+<!-- Script para o alerta -->
+<script>
+    function showAlert() {
+        alert("Página em manutenção.\nAguarde!");
+    }
+</script>
+
+ 
+     <!-- Contact Section -->
+     <section class="contact" id="contact">
+        <h2>Fale <span>comigo!</span></h2>
+        <form action="https://formspree.io/f/mzzbbwdg" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Nome Completo" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+            </div>
+    
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Contato" required>
+                <input type="text" name="subject" placeholder="Assunto" required>
+            </div>
+    
+            <textarea name="message" cols="30" rows="8" placeholder="Digite sua mensagem" required></textarea>
+            
+            <!-- Alterado o <a> para <button type="submit"> -->
+            <button type="submit" class="btn">Enviar mensagem</button>
+        </form>
+    </section>
+    
+     <!-- /Contact Section -->
+ 
+     <!-- About Section -->
+     <section class="about" id="about"> <!-- Corrigido de 'About' para 'about' -->
+         <div class="css">
+             <img src="css/img/img - about.png" alt="About me"> <!-- Corrigido o caminho da imagem -->
+         </div>
+         <div class="about-content">
+             <h3>Sobre mim</h3>
+             <h1>Analista de Dados <span>and</span> <span>Developer</span></h1>
+             <p>Um eterno estudante, atualmente cursando Gestão da Tecnologia da Informação, com formatura prevista para 2026, e estou em busca de uma oportunidade de estágio na área de análise de dados. Tenho habilidades em SQL e Power BI, e estou constantemente aprimorando meus conhecimentos em Python para análise de dados. Estou motivado a aplicar minha experiência em projetos práticos que ajudem a otimizar e interpretar dados empresariais de maneira eficaz.</p>
+            
+         </div>
+     </section>
+     <!-- /About Section -->
+ 
+     <footer>
+         <p>Copyright - &copy; 2024 Desenvolvido por &lt;/ Wellington Biazi &gt;. Todos os direitos reservados.</p>
+     </footer>
+     
+     <script src="./js/script.js"></script>
+ 
+ 
+ </body>
+ </html>
+ 
